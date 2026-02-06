@@ -2,6 +2,7 @@
  * Renderer 进程入口
  */
 import { createGameManager } from './GameManager.js';
+import { createConfigWizard } from './ConfigWizard.js';
 // 游戏管理器实例
 let gameManager = null;
 // DOM 元素
@@ -72,11 +73,25 @@ async function initGame() {
     }
 }
 // 监听 BridgeState 更新
-window.electronAPI.onBridgeStateUpdate((state) => {
+window.electronAPI?.onBridgeStateUpdate((state) => {
     console.log('[Renderer] BridgeState update:', state);
     updateUI(state);
 });
+// 主启动函数
+async function main() {
+    console.log('[Renderer] OpenCode Buddy starting...');
+    // 检查是否需要显示配置向导
+    const wizard = createConfigWizard();
+    const showedWizard = await wizard.checkAndShow(() => {
+        console.log('[Renderer] Config wizard completed');
+    });
+    if (showedWizard) {
+        console.log('[Renderer] Showing config wizard');
+    }
+    // 初始化游戏
+    await initGame();
+    console.log('[Renderer] OpenCode Buddy started');
+}
 // 启动
-initGame();
-console.log('[Renderer] OpenCode Buddy started');
+main();
 //# sourceMappingURL=index.js.map

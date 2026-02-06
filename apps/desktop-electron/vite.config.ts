@@ -1,25 +1,10 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
-import { viteStaticCopy } from 'vite-plugin-static-copy';
 
 export default defineConfig({
   root: resolve(__dirname, 'src/renderer'),
   base: './',
-  publicDir: false, // 禁用默认 publicDir 行为，防止递归复制
-  plugins: [
-    viteStaticCopy({
-      targets: [
-        {
-          src: resolve(__dirname, '../../ArtAssets'),
-          dest: 'ArtAssets'
-        },
-        {
-          src: resolve(__dirname, '../../Config'),
-          dest: 'Config'
-        }
-      ]
-    })
-  ],
+  publicDir: resolve(__dirname, '../../'), // 项目根目录作为 public
   build: {
     outDir: resolve(__dirname, 'dist'),
     emptyOutDir: true,
