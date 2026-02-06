@@ -1,0 +1,22 @@
+{
+  "name": "@opencode-buddy/bridge-plugin",
+  "version": "0.1.0",
+  "private": true,
+  "description": "OpenCode 插件 - 将 session/todo 状态写入 state.json",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "@opencode-ai/plugin": "^1.1.51",
+    "@opencode-buddy/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.3.3"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "$comment": "兽人敌人配置",
+  "id": "orc",
+  "displayName": "兽人",
+  "tier": 1,
+  "stats": {
+    "hp": 50,
+    "atk": 10,
+    "def": 3,
+    "spd": 0.9
+  },
+  "anims": {
+    "idle": {
+      "variants": [
+        "Idle"
+      ],
+      "fps": 6,
+      "loop": true
+    },
+    "walk": {
+      "variants": [
+        "Walk"
+      ],
+      "fps": 8,
+      "loop": true
+    },
+    "attack": {
+      "variants": [
+        "Attack01",
+        "Attack02"
+      ],
+      "fps": 10
+    },
+    "hit": {
+      "variants": [
+        "Hit"
+      ],
+      "fps": 10
+    },
+    "die": {
+      "variants": [
+        "Die"
+      ],
+      "fps": 8
+    }
+  },
+  "assetPath": "ArtAssets/Enemy/Orc"
+}

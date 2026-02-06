@@ -1,0 +1,21 @@
+{
+  "name": "@opencode-buddy/renderer-pixi",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "@opencode-buddy/shared": "workspace:*",
+    "@opencode-buddy/game-core": "workspace:*",
+    "pixi.js": "^8.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0",
+    "rimraf": "^5.0.0"
+  }
+}

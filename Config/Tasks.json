@@ -1,0 +1,29 @@
+{
+  "$comment": "任务与奖励配置",
+  "tasks": [
+    {
+      "id": "todo_5",
+      "type": "todosCompletedTotal",
+      "threshold": 5,
+      "reward": {
+        "addCharacter": "soldier"
+      }
+    },
+    {
+      "id": "todo_15",
+      "type": "todosCompletedTotal",
+      "threshold": 15,
+      "reward": {
+        "addCharacter": "knight"
+      }
+    },
+    {
+      "id": "conv_3",
+      "type": "conversationsCompletedTotal",
+      "threshold": 3,
+      "reward": {
+        "addCharacter": "archer"
+      }
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "$comment": "士兵角色配置",
+  "id": "soldier",
+  "displayName": "士兵",
+  "stats": {
+    "hp": 100,
+    "atk": 15,
+    "def": 5,
+    "spd": 1.0,
+    "hpRegen": 5
+  },
+  "skill": {
+    "chance": 0.08,
+    "multiplier": 2.5
+  },
+  "recovery": {
+    "durationSec": 20,
+    "healIntervalSec": 2
+  },
+  "anims": {
+    "idle": {
+      "variants": [
+        "Idle"
+      ],
+      "fps": 8,
+      "loop": true
+    },
+    "walk": {
+      "variants": [
+        "Walk"
+      ],
+      "fps": 10,
+      "loop": true
+    },
+    "attack": {
+      "variants": [
+        "Attack01",
+        "Attack02"
+      ],
+      "fps": 12
+    },
+    "skill": {
+      "variants": [
+        "Skill"
+      ],
+      "fps": 12
+    },
+    "hit": {
+      "variants": [
+        "Hit"
+      ],
+      "fps": 10
+    },
+    "die": {
+      "variants": [
+        "Die"
+      ],
+      "fps": 8
+    },
+    "defend": {
+      "variants": [
+        "Defend"
+      ],
+      "fps": 10
+    }
+  },
+  "assetPath": "ArtAssets/Character/Soldier"
+}

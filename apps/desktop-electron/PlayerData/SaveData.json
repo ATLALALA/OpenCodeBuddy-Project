@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "lastSavedAt": "2026-02-06T08:29:32.094Z",
+  "counters": {
+    "todosCompletedTotal": 0,
+    "conversationsCompletedTotal": 0
+  },
+  "tasks": {
+    "claimedIds": []
+  },
+  "roster": {
+    "characters": [
+      "soldier"
+    ],
+    "maxSize": 6
+  },
+  "characterStates": {
+    "soldier": {
+      "hp": 100,
+      "maxHp": 100,
+      "state": "Combat"
+    }
+  }
+}

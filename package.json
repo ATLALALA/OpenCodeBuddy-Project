@@ -1,0 +1,20 @@
+{
+  "name": "opencode-buddy",
+  "version": "0.1.0",
+  "private": true,
+  "description": "OpenCode 桌面挂机战斗小游戏",
+  "scripts": {
+    "dev": "pnpm -r run dev",
+    "build": "pnpm -r run build",
+    "test": "pnpm -r run test",
+    "lint": "pnpm -r run lint",
+    "clean": "pnpm -r run clean"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "$comment": "全局游戏参数配置",
+  "battle": {
+    "skillChance": 0.08,
+    "defendDamageReduction": 0.5,
+    "critMultiplier": 2.5
+  },
+  "recovery": {
+    "defaultDurationSec": 20,
+    "healIntervalSec": 2,
+    "hpRegenPercent": 0.05
+  },
+  "spawn": {
+    "baseAliveCount": 2,
+    "alivePerTodo": 1,
+    "respawnDelayMin": 0.8,
+    "respawnDelayMax": 1.6
+  },
+  "wave": {
+    "normalWeight": 80,
+    "eliteWeight": 18,
+    "rareWeight": 2
+  },
+  "animation": {
+    "defaultFps": 8,
+    "hitFlashDuration": 0.1,
+    "deathFadeDuration": 0.5
+  }
+}

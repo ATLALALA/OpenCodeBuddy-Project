@@ -1,0 +1,25 @@
+{
+  "$comment": "玩家存档默认值",
+  "version": 1,
+  "lastSavedAt": "2026-02-06T00:00:00Z",
+  "counters": {
+    "todosCompletedTotal": 0,
+    "conversationsCompletedTotal": 0
+  },
+  "tasks": {
+    "claimedIds": []
+  },
+  "roster": {
+    "characters": [
+      "soldier"
+    ],
+    "maxSize": 6
+  },
+  "characterStates": {
+    "soldier": {
+      "hp": 100,
+      "maxHp": 100,
+      "state": "Combat"
+    }
+  }
+}

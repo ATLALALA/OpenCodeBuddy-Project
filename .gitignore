@@ -1,0 +1,21 @@
+node_modules/
+dist/
+coverage/
+.DS_Store
+.env
+*.log
+
+# Unity/System generic
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+
+# IDEs
+.vscode/
+.idea/
+*.sln
+*.csproj

@@ -1,0 +1,14 @@
+{
+  "$comment": "敌人概率池配置",
+  "pools": {
+    "tier1": {
+      "enemies": [
+        {
+          "id": "orc",
+          "weight": 100
+        }
+      ]
+    }
+  },
+  "defaultPool": "tier1"
+}

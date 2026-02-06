@@ -1,0 +1,25 @@
+{
+  "$comment": "用户设置默认值",
+  "version": 1,
+  "window": {
+    "width": 360,
+    "height": 220,
+    "x": 100,
+    "y": 100,
+    "alwaysOnTop": true,
+    "opacity": 1.0
+  },
+  "audio": {
+    "muted": false,
+    "volume": 0.8
+  },
+  "gameplay": {
+    "animationPaused": false,
+    "battleSpeed": 1.0
+  },
+  "debug": {
+    "showDebugPanel": false,
+    "mockMode": false
+  },
+  "currentWorktree": null
+}

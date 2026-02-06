@@ -1,0 +1,33 @@
+{
+  "name": "@opencode-buddy/desktop-electron",
+  "version": "0.1.0",
+  "private": true,
+  "description": "OpenCode Buddy 桌面应用",
+  "type": "module",
+  "main": "dist-electron/main/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build && electron-builder",
+    "build:vite": "vite build",
+    "preview": "vite preview",
+    "electron:dev": "concurrently \"vite\" \"wait-on http://localhost:5173 && electron .\"",
+    "clean": "rimraf dist dist-electron"
+  },
+  "dependencies": {
+    "@opencode-buddy/game-core": "workspace:*",
+    "@opencode-buddy/renderer-pixi": "workspace:*",
+    "@opencode-buddy/shared": "workspace:*",
+    "chokidar": "^3.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "concurrently": "^8.2.2",
+    "electron": "^28.3.3",
+    "electron-builder": "^24.9.1",
+    "pixi.js": "^8.0.0",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.12",
+    "wait-on": "^7.2.0"
+  }
+}
